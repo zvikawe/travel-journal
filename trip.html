@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Journey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="detail-page">
+<header class="detail-hero" id="detailHero">
+  <nav class="nav wrap detail-nav">
+    <a class="wordmark" href="index.html">← <span>All journeys</span></a>
+    <span class="small-pill" id="tripStatus"></span>
+  </nav>
+  <div class="detail-overlay"></div>
+  <div class="detail-content wrap">
+    <div>
+      <p class="kicker" id="tripDates"></p>
+      <h1 id="tripTitle"></h1>
+      <p class="detail-tagline" id="tripTagline"></p>
+    </div>
+    <div class="detail-side">
+      <div class="big-flag" id="tripFlag"></div>
+      <div class="countdown" id="countdown"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="facts wrap" id="facts"></section>
+
+<section class="itinerary-section wrap">
+  <div class="section-head">
+    <p class="section-index">02 / Itinerary</p>
+    <h2>Day by day</h2>
+  </div>
+  <div class="day-stack" id="timeline"></div>
+</section>
+
+<section class="planning-section">
+  <div class="wrap planning-grid">
+    <article>
+      <p class="section-index">03 / Book ahead</p>
+      <h2>Before we go</h2>
+      <div class="checklist" id="bookingList"></div>
+    </article>
+    <article class="notes-card">
+      <p class="section-index">04 / Notes</p>
+      <h2>Keep in mind</h2>
+      <p id="tripNotes"></p>
+      <textarea id="personalNotes" placeholder="Add personal notes, confirmation numbers or ideas…"></textarea>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="index.html">← All journeys</a>
+    <span>Zvika & Amit · 2026</span>
+  </div>
+</footer>
+<script src="data/trips.js"></script>
+<script src="trip.js"></script>
+</body>
+</html>
